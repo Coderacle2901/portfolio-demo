@@ -1,0 +1,288 @@
+:root{
+    --body-color:rgb(39, 38, 38);
+    --second-color:rgb(241, 107, 18);
+    --third-color: rgb(138, 138, 153);
+}
+
+
+
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    color: white;;
+    font-family: sans-serif;
+    background-color: var(--body-color);
+    padding: 50px 10px 0;
+}
+
+
+.nav-list{
+   display: flex;
+   justify-content: space-between;
+   width: 90%;
+   background-color: black;
+   position: fixed;
+   top:0;
+   left: 50%;
+   transform:translate(-50%);
+   padding: 5px 10px ;
+   height: 5%;
+   border: 1px solid gray;
+   border-radius: 30px;
+   z-index: 999;
+   font-family: 'Times New Roman', Times, serif;
+
+}
+.nav-list li{
+list-style-type: none;
+margin-top: 5.5px;   
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.nav-list li a:hover{
+    padding: 5.5px;
+    background-color: var(--second-color);
+    border-radius: 30px;
+    transition: all ease 200ms;
+}
+.logo{
+    width: 120px;
+    height: auto;
+    margin-top: -8px;
+}
+/*hero*/
+.hero{
+    width: 95%;
+    margin: 20px auto;
+    height:auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+.heading {
+    width: 70%;
+    height: auto;
+    text-align: center;
+}
+
+.hello{
+    padding:3px 8px;
+    background-color: gray;
+    color: black;
+    border-radius: 30px;
+    font-size: 12px;
+    margin-left: -2.5rem;
+}
+
+.heading .header{
+   margin-top: 7px;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+}
+.name{
+    color: var(--second-color);
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0 10px;
+    margin-top: 20px;
+}
+.colon{
+    color: var(--third-color);
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.quote-text{
+    font-size:10px;
+    line-height: 15px;
+    color: var(--third-color);
+    margin-top: -10px;
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6px;
+
+}
+
+.star-img{
+    width: 100px;
+    height: auto;
+}
+
+.years{
+    color: var(--third-color);
+}
+
+.experience p{
+    color: var(--third-color);
+    font-size: 10px;
+}
+
+.pretty{
+    width: 550px;
+    margin-top: -9rem;
+    margin-bottom: -2.5rem;
+  object-fit: contain;
+  z-index:3;
+
+    
+}
+.img-box{
+    width: 50%;
+    height: 450px;
+    background-color: rgb(243, 179, 142);
+    position: absolute;
+    top: 51.7%;
+    z-index: 1;
+    border-radius:  50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/*why-me*/
+
+.why-me{
+    width: 95%;
+    height: auto;
+    background-color: rgb(231, 228, 228);
+    color: var(--body-color);
+    margin: -7px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    border-radius: 35px;
+}
+
+.mask{
+    width: 350px;
+}
+
+.why-content{
+    margin-top: 1.4rem;
+    padding: 5px;
+}
+
+.why-content h2{
+    font-size: 2rem;
+    color: rgb(51, 46, 46);
+}
+
+.orange{
+    color: var(--second-color);
+    margin-left: 10px;
+}
+
+.why-text{
+    color: var(--body-color);
+    margin-top: 2rem;
+    font-size: 12px;
+    font-weight:normal;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.project-figure{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap:30px;
+}
+
+.figure-1 h3, .figure-2 h3{
+    color: var(--body-color);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.figure-text{
+    margin-top: 5px;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#hire{
+    margin-top: 35px;
+    font-size: 20px;
+    margin-left: 10px;
+    padding:17px 26px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+#hire:hover{
+    background-color: var(--second-color);
+    transition: all ease-in 100ms;
+}
+
+@media (max-width: 473px){
+
+    .body{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .why-me{
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr; 
+        margin: 10px auto;
+    }
+
+    .project-figure{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr
+    }
+
+    .nav-list{
+       display: none;
+    }
+    #hire{
+      margin: 35px auto;
+    }
+
+    .pretty{
+        width: 350px;
+        margin-top: -9rem;
+        margin-bottom: -2.5rem;
+      object-fit: contain;
+      z-index:3;
+        
+    }
+
+    .img-box{
+        width: 40%;
+        height: 250px;
+        background-color: rgb(243, 179, 142);
+        position: absolute;
+        top: 51.7%;
+        z-index: 1;
+        border-radius:  50%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .quote{
+        margin-left: -3rem;
+    }
+
+    .mask{
+        width: 250px;
+    }
+}
